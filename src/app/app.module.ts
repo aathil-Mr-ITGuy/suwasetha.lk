@@ -15,7 +15,7 @@ import { CounterComponent } from './counter/counter.component';
 import { InternshipsComponent } from './internships/internships.component';
 import { InternshipsSearchComponent } from './internships-search/internships-search.component';
 import { Nav2Component } from './nav2/nav2.component';
-import { CompaniesComponent } from './companies/companies.component';
+import { HospitalComponent } from './Hospital/Hospital.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
@@ -38,7 +38,7 @@ import { DoctorsComponent } from './doctors/doctors.component';
     InternshipsComponent,
     InternshipsSearchComponent,
     Nav2Component,
-    CompaniesComponent,
+    HospitalComponent,
     BlogComponent,
     ContactComponent,
     LoginComponent,

@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { IndexComponent } from './index/index.component';
 import { InternshipsComponent } from './internships/internships.component';
-import { CompaniesComponent } from './companies/companies.component';
+import { HospitalComponent } from './Hospital/Hospital.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
@@ -25,7 +25,7 @@ const routes: Routes = [
   },
   {
     path:'companies',
-    component: CompaniesComponent
+    component: HospitalComponent
   },
   {
     path:'doctors',
