@@ -24,7 +24,7 @@ const routes: Routes = [
     component: InternshipsComponent
   },
   {
-    path:'companies',
+    path:'Hospital',
     component: HospitalComponent
   },
   {
