@@ -43,9 +43,19 @@
 							<input type="text" class="input-text with-border" name="firstname" id="firstname" placeholder="First Name" required/>
 							<input type="text" class="input-text with-border" name="secondname" id="secondname" placeholder="Second Name" required/>
 							<input type="text" class="input-text with-border" name="age" id="age" placeholder="Age" required/>
-							Date <input type="date">
-							Time <input type="time">
-							Hospital <input type="">
+							<input type="text" class="input-text with-border" name="nic" id="nic" placeholder="NIC" required/>
+							Date <input type="date" required/>
+							Time <input type="time" required/>
+							Hospital <select name="hospital"  required>
+								<option disabled select value> -- Select a Hospital -- </option>
+								<option value="nhsl">National Hospital Sri Lanka</option>
+								<option value="gampaha">District General Hospital - Gampaha</option>
+							</select>
+							Clinic <select name="clinic" required>
+								<option disabled select value> -- Select a Clinic -- </option>
+								<option value="opd">OPD</option>
+								<option value="ent">ENT</option>
+							</select>
 					</div>
 					
 				</form>
