@@ -23,6 +23,7 @@ import { RegisterComponent } from './register/register.component';
 import { AboutComponent } from './about/about.component';
 import { DoctorsComponent } from './doctors/doctors.component';
 import { AppointmentsComponent } from './appointments/appointments.component';
+import { BookappointmentComponent } from './bookappointment/bookappointment.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { AppointmentsComponent } from './appointments/appointments.component';
     RegisterComponent,
     AboutComponent,
     DoctorsComponent,
-    AppointmentsComponent
+    AppointmentsComponent,
+    BookappointmentComponent
   ],
   imports: [
     BrowserModule,
