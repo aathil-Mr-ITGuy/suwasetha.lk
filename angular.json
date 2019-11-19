@@ -28,6 +28,7 @@
               "src/assets/css/blue.css",
               "src/assets/css/icons.css",
               "src/assets/css/bootstrap-grid.css"
+              
             ],
             "scripts": [
               "src/assets/js/jquery-3.4.1.min.js",
@@ -108,7 +109,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [ "../node_modules/jquery/dist/jquery.min.js" ] 
           }
         },
         "lint": {

@@ -11,6 +11,7 @@ import { RegisterComponent } from './register/register.component';
 import { AboutComponent } from './about/about.component';
 import { DoctorsComponent } from './doctors/doctors.component';
 import { AppointmentsComponent } from './appointments/appointments.component';
+import { BookappointmentComponent } from './bookappointment/bookappointment.component';
 
 
 
@@ -55,6 +56,10 @@ const routes: Routes = [
   {
     path:'appointments',
     component: AppointmentsComponent
+  },
+  {
+    path: 'bookappointment',
+    component: BookappointmentComponent
   }
   
 

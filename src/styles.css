@@ -15591,5 +15591,19 @@ ul.dashboard-box-list > li:hover {
 	.padding-left-100 { padding-left: 100px !important; }
 
 
-
+	input.ng-touched.ng-invalid{
+		border-color: #dc3545;
+	}
+	 
+	div.validation-error{
+		width: 100%;
+		margin-top: .25rem;
+		font-size: 80%;
+		color: #dc3545;
+	}
+	 
+	/* for table row hover - in employee-list component */
+	table.table-hover tbody tr:hover{
+		cursor: pointer;
+	}
 	
