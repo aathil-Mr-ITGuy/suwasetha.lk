@@ -1,5 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
+import { environment } from '../environments/environment';
+import { LoginService } from './shared/login.service';
+import { FormsModule } from '@angular/forms';
+import { AngularFirestore } from '@angular/fire/firestore';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
@@ -24,7 +32,7 @@ import { AboutComponent } from './about/about.component';
 import { DoctorsComponent } from './doctors/doctors.component';
 import { AppointmentsComponent } from './appointments/appointments.component';
 import { BookappointmentComponent } from './bookappointment/bookappointment.component';
-
+import * as $ from 'jquery';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,9 +60,16 @@ import { BookappointmentComponent } from './bookappointment/bookappointment.comp
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp (environment.firebaseConfig),
+    AngularFireDatabaseModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot()
+    //AngularFirestore
   ],
-  providers: [],
+  providers: [AngularFirestore,
+    LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
