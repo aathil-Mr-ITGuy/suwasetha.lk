@@ -1,13 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from '../environments/environment';
 import { LoginService } from './shared/login.service';
 import { FormsModule } from '@angular/forms';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
+import { AngularFireAuthModule, AngularFireAuth } from '@angular/fire/auth';
 
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
@@ -33,6 +34,17 @@ import { DoctorsComponent } from './doctors/doctors.component';
 import { AppointmentsComponent } from './appointments/appointments.component';
 import { BookappointmentComponent } from './bookappointment/bookappointment.component';
 import * as $ from 'jquery';
+
+var config= {
+  apiKey: "AIzaSyAvMv5r7BPjy60gg_Ss7_mpZodp9oJaJEE",
+  authDomain: "suwasethalk-68fc8.firebaseapp.com",
+  databaseURL: "https://suwasethalk-68fc8.firebaseio.com",
+  projectId: "suwasethalk-68fc8",
+  storageBucket: "suwasethalk-68fc8.appspot.com",
+  messagingSenderId: "761040260897",
+  
+}
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -61,11 +73,12 @@ import * as $ from 'jquery';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp (environment.firebaseConfig),
+    AngularFireModule.initializeApp (config),
     AngularFireDatabaseModule,
     FormsModule,
     BrowserAnimationsModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    AngularFireAuthModule
     //AngularFirestore
   ],
   providers: [AngularFirestore,
