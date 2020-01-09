@@ -1,0 +1,23 @@
+<h1 class="display-5">Add New Hospital</h1>
+<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+  <input type="hidden" name="id" #id="ngModel" [(ngModel)]="service.formData.id">
+  <div class="form-group">
+    <input name="hospitalName" #hospitalName="ngModel" [(ngModel)]="service.formData.hospitalName" class="form-control" placeholder="Enter hospital name" required>
+    <div *ngIf="hospitalName.invalid && hospitalName.touched" class="validation-error">This field is required.</div>
+  </div>
+  <div class="form-group">
+    <input name="district" #district="ngModel" [(ngModel)]="service.formData.district" class="form-control" placeholder="Enter district of hospital">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <input name="hospitalId" #hospitalId="ngModel" [(ngModel)]="service.formData.hospitalId" class="form-control" placeholder="Enter hospital Id">
+    </div>
+    <div class="form-group  col-md-6">
+      <input name="mobile" #mobile="ngModel" [(ngModel)]="service.formData.mobile" class="form-control" placeholder="Telephone">
+    </div>
+  </div>
+  <div class="form-group">
+    <button type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block btn-info">CREATE</button>
+  </div>
+ 
+</form>

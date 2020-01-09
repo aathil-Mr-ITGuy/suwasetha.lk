@@ -27,7 +27,9 @@
               "src/styles.css",
               "src/assets/css/blue.css",
               "src/assets/css/icons.css",
-              "src/assets/css/bootstrap-grid.css"
+              "src/assets/css/bootstrap-grid.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": [
               "src/assets/js/jquery-3.4.1.min.js",
@@ -42,7 +44,9 @@
               "src/assets/js/counterup.min.js",
               "src/assets/js/magnific-popup.min.js",
               "src/assets/js/slick.min.js",
-              "src/assets/js/custom.js"
+              "src/assets/js/custom.js",
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
           },
           "configurations": {

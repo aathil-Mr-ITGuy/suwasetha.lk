@@ -1,0 +1,10 @@
+.form-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 400px;
+    margin-top: 50px;
+}
+.body-form{
+    height: 500px;
+    width: 500px;
+}

@@ -1,6 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { bootstrap } from 'bootstrap';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { environment } from '../environments/environment';
+import {FormsModule} from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
+ 
+ 
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
 import { HeaderComponent } from './header/header.component';
@@ -22,6 +31,18 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { AboutComponent } from './about/about.component';
 import { DoctorsComponent } from './doctors/doctors.component';
+import { AdminComponent } from './admin/admin.component';
+import { ManageUserComponent } from './manage-user/manage-user.component';
+import { UsersComponent } from './users/users.component';
+import { UserComponent } from './users/user/user.component';
+import { UserListComponent } from './users/user-list/user-list.component';
+import { UserService } from './shared/user.service';
+import { HospitalsComponent } from './hospitals/hospitals.component';
+import { HospitalComponent } from './hospitals/hospital/hospital.component';
+import { HospitalListComponent } from './hospitals/hospital-list/hospital-list.component';
+import { HospitalService } from './shared/hospital.service';
+
+
 
 @NgModule({
   declarations: [
@@ -44,13 +65,30 @@ import { DoctorsComponent } from './doctors/doctors.component';
     LoginComponent,
     RegisterComponent,
     AboutComponent,
-    DoctorsComponent
+    DoctorsComponent,
+    AdminComponent,
+    ManageUserComponent,
+    UsersComponent,
+    UserComponent,
+    UserListComponent,
+    HospitalsComponent,
+    HospitalComponent,
+    HospitalListComponent,
+    
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot()
+	
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+    providers: [UserService,HospitalService],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

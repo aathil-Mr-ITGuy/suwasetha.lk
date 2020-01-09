@@ -10,6 +10,11 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { AboutComponent } from './about/about.component';
 import { DoctorsComponent } from './doctors/doctors.component';
+import { AdminComponent } from './admin/admin.component';
+import { ManageUserComponent } from './manage-user/manage-user.component';
+import { UsersComponent } from './users/users.component';
+import { HospitalsComponent } from './hospitals/hospitals.component';
+
 
 
 
@@ -50,9 +55,24 @@ const routes: Routes = [
   {
     path:'about',
     component: AboutComponent
-  }
+  },
+  {
+    path:'admin',
+    component: AdminComponent
+  },
+  {
+    path:'manage-user',
+    component: ManageUserComponent
+  },
+  {
+    path:'users',
+    component: UsersComponent
+  },
+  {
+    path:'hospitals',
+    component: HospitalsComponent
+  },
   
-
 ];
 
 @NgModule({

@@ -1,0 +1,47 @@
+.form-container{
+  display: flex;
+  flex-direction: row;
+  margin-left: 400px;
+  margin-top: 50px;
+}
+.body-form{
+  height: 150px;
+  width: 200px;
+ 
+}
+
+input[type=text], select {
+    width: 350px;
+    padding: 6px 12px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=password], select {
+    width: 350px;
+    padding: 6px 12px;
+    margin: center;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  
+   input[type=submit] {
+    width: 120px;
+    padding: 4px 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-left: 50%;
+      
+  } 
+  
+  
+  div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    width: 500px;
+    
+  }
