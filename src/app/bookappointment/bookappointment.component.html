@@ -1,0 +1,76 @@
+<app-nav2></app-nav2>
+
+<!-- Titlebar
+================================================== -->
+<div id="titlebar" class="gradient">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+
+				<h2>Book an Appointment</h2>
+
+				<!-- Breadcrumbs -->
+				<nav id="breadcrumbs" class="dark">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li>Appointment</li>
+					</ul>
+				</nav>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Page Content
+================================================== -->
+<div class="container">
+	<div class="row">
+		<div class="col-xl-5 offset-xl-3">
+
+
+			<div class="login-register-page">
+				<!-- Welcome Text -->
+				<div class="welcome-text">
+					<h3>Make your appointment here!</h3>
+					
+				</div>
+					
+				<!-- Form -->
+				<form method="post" id="appointment-form">
+					<div>
+							<input type="text" class="input-text with-border" name="firstname" id="firstname" placeholder="First Name" required/>
+							<input type="text" class="input-text with-border" name="secondname" id="secondname" placeholder="Second Name" required/>
+							<input type="text" class="input-text with-border" name="age" id="age" placeholder="Age" required/>
+							<input type="text" class="input-text with-border" name="nic" id="nic" placeholder="NIC" required/>
+							Date <input type="date" required/>
+							Time <input type="time" required/>
+							Hospital <select name="hospital"  required>
+								<option disabled select value> -- Select a Hospital -- </option>
+								<option value="nhsl">National Hospital Sri Lanka</option>
+								<option value="gampaha">District General Hospital - Gampaha</option>
+							</select>
+							Clinic <select name="clinic" required>
+								<option disabled select value> -- Select a Clinic -- </option>
+								<option value="opd">OPD</option>
+								<option value="ent">ENT</option>
+							</select>
+					</div>
+					
+				</form>
+				
+				<!-- Button -->
+				<button class="button full-width button-sliding-icon ripple-effect margin-top-10" type="submit" form="appointment-form">Book the Appointment<i class="icon-material-outline-arrow-right-alt"></i></button>
+				
+				
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+<!-- Spacer -->
+<div class="margin-top-70"></div>
+<!-- Spacer / End-->

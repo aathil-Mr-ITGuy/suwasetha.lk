@@ -13,6 +13,15 @@ export const environment = {
     messagingSenderId: "105240288331",
     appId: "1:105240288331:web:10f9c5afe3feab232b01ce",
     measurementId: "G-QJHM9F0M3R"
+  firebaseConfig : {
+    apiKey: "AIzaSyAvMv5r7BPjy60gg_Ss7_mpZodp9oJaJEE",
+    authDomain: "suwasethalk-68fc8.firebaseapp.com",
+    databaseURL: "https://suwasethalk-68fc8.firebaseio.com",
+    projectId: "suwasethalk-68fc8",
+    storageBucket: "suwasethalk-68fc8.appspot.com",
+    messagingSenderId: "761040260897",
+    appId: "1:761040260897:web:aa9dcd5eee75a3e08bb860",
+    measurementId: "G-5K9FVF5MPP"
   }
 };
 

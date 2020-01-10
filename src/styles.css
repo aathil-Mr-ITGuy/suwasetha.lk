@@ -37,9 +37,9 @@
   # Job Listing - Grid Layout
   # Tasks - List Layout
   # Tasks - Grid Layout
-  # Freelancers - Grid Layout
-  # Freelancers - List Layout
-  # Browse Companies
+  # doctors - Grid Layout
+  # doctors - List Layout
+  # Browse hospitals
 
 04. User Interface Elements -------------------------------------
   # Buttons
@@ -89,7 +89,7 @@
 
 06. Single Pages ------------------------------------------------
   # Single Job Page
-  # Single Freelancer Profile
+  # Single doctors Profile
 
 07. Dashboard ---------------------------------------------------
   # Dashboard Navigation
@@ -2990,7 +2990,7 @@ body #backtotop a {
 	.single-page-header .header-image { max-width: 140px; }
 }
 
-.single-page-header.freelancer-header .header-image {
+.single-page-header.doctors-header .header-image {
     background: #fff;
     border-radius: 50%;
     box-shadow: none;
@@ -3131,7 +3131,7 @@ body #backtotop a {
 
 /* Media Queries for Single Page Header */
 @media (max-width: 1366px) {
-	.single-page-header.freelancer-header .header-image {
+	.single-page-header.doctors-header .header-image {
 	    height: 130px;
 	    flex: 0 0 130px;
 	    width: 130px;
@@ -3154,7 +3154,7 @@ body #backtotop a {
         flex: 0 0 120px;
     }
 
-	.single-page-header.freelancer-header .header-image {
+	.single-page-header.doctors-header .header-image {
 	    height: 120px;
 	    flex: 0 0 120px;
 	    width: 120px;
@@ -3210,13 +3210,13 @@ body #backtotop a {
         padding-top: 25px;
     }
 
-	.single-page-header.freelancer-header .header-image {
+	.single-page-header.doctors-header .header-image {
 	    height: 70px;
 	    flex: 0 0 70px;
 	    width: 70px;
 	    margin-bottom: -70px;
 	}
-	.single-page-header.freelancer-header .header-details h3 {
+	.single-page-header.doctors-header .header-details h3 {
 		margin-left: 90px;
 	}
 }
@@ -3224,13 +3224,13 @@ body #backtotop a {
 @media (max-width: 768px) {
 	.single-page-header:after, .single-page-header:before { background: #f7f7f7; }
 
-	.single-page-header.freelancer-header .header-image {
+	.single-page-header.doctors-header .header-image {
 	    height: 70px;
 	    flex: 0 0 70px;
 	    width: 70px;
 	    margin-bottom: -70px;
 	}
-	.single-page-header.freelancer-header .header-details h3 {
+	.single-page-header.doctors-header .header-details h3 {
 		margin-left: 90px;
 	}
 }
@@ -3891,7 +3891,7 @@ span.blog-item-tag {
 	padding: 2px 0;
 }
 
-.contact-location-info .freelancer-socials {
+.contact-location-info .doctors-socials {
 	margin-top: 10px;
 	margin-left: -8px;
 	transform: scale(0.9);
@@ -4496,7 +4496,7 @@ span.blog-item-tag {
 	padding-bottom: 32px;
 }
 
-.job-listing .job-listing-company-logo {
+.job-listing .job-listing-hospital-logo {
 	flex: 1;
 	max-width: 55px;
 	margin-right: 25px;
@@ -4504,7 +4504,7 @@ span.blog-item-tag {
 	top: 3px;
 }
 
-.job-listing .job-listing-company-logo img {
+.job-listing .job-listing-hospital-logo img {
 	border-radius: 4px;
 	transform: translate3d(0,0,0);
 }
@@ -4520,7 +4520,7 @@ span.blog-item-tag {
 	color: #666;
 }
 
-.job-listing h4.job-listing-company {
+.job-listing h4.job-listing-hospital {
 	font-size: 16px;
 	color: #808080;
 }
@@ -4567,7 +4567,7 @@ span.blog-item-tag {
 
 /* Media Queries for Default List Layout*/
 @media (max-width: 768px) {
-	.job-listing .job-listing-company-logo { display: none; }
+	.job-listing .job-listing-hospital-logo { display: none; }
 	.job-listing .job-listing-title { padding-right: 10%; }
 }
 
@@ -4642,7 +4642,7 @@ span.blog-item-tag {
     top: 0;
 }
 
-.compact-list-layout .job-listing .job-listing-company-logo {
+.compact-list-layout .job-listing .job-listing-hospital-logo {
 	max-width: 50px;
 	margin-right: 30px;
 	top: 0;
@@ -4695,7 +4695,7 @@ span.blog-item-tag {
     box-shadow: 0 4px 12px rgba(102,103,107,0.15);
 }
 
-/* Alt Styles for Single Company Profile */
+/* Alt Styles for Single hospital Profile */
 .boxed-list .compact-list-layout {
 	box-shadow: none;
 	margin-top: 0;
@@ -4768,7 +4768,7 @@ span.blog-item-tag {
 	transform: translateY(-50%) scale(0.96);
 }
 
-.grid-layout .job-listing .job-listing-company-logo {
+.grid-layout .job-listing .job-listing-hospital-logo {
 	max-width: 56px;
 	margin-right: 24px;
 	top: 1px;
@@ -5142,15 +5142,15 @@ span.blog-item-tag {
 
 
 /* ---------------------------------- */
-/* Freelancers - Grid Layout
+/* doctors - Grid Layout
 ------------------------------------- */
-.freelancers-container {
+.doctors-container {
 	display: flex;
 	flex-wrap: wrap;
 	width: calc(100% + 30px);
 }
 
-.freelancer {
+.doctors {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -5164,16 +5164,16 @@ span.blog-item-tag {
     cursor: default;
 }
 
-.freelancer:hover {
+.doctors:hover {
     box-shadow: 0 2px 18px rgba(0,0,0,0.14);
     transform: translateY(-4px);
 }
 
-.freelancer .bookmark-icon {
+.doctors .bookmark-icon {
 	cursor: pointer;
 }
 
-.freelancer-overview {
+.doctors-overview {
 	text-align: center;
 	padding: 38px 20px;
 	flex-grow: 1;
@@ -5182,46 +5182,46 @@ span.blog-item-tag {
 	align-items: center;
 }
 
-.freelancer-overview-inner {
+.doctors-overview-inner {
 	flex: 1;
 }
 
-.freelancer-overview .freelancer-avatar {
+.doctors-overview .doctors-avatar {
 	width: 110px;
 	margin: 0 auto;
 	position: relative;
 }
 
-.freelancer-overview .freelancer-avatar img {
+.doctors-overview .doctors-avatar img {
 	width: 100%;
 	border-radius: 50%;
 	cursor: pointer;
 }
 
-.freelancer-overview .freelancer-avatar .verified-badge {
+.doctors-overview .doctors-avatar .verified-badge {
 	position: absolute;
 	bottom: 0;
 	right: 0;
 }
 
-.freelancer-name {
+.doctors-name {
 	margin-top: 19px;
 }
 
-.freelancer-rating {
+.doctors-rating {
 	margin-top: 5px;
 	margin-bottom: -10px;
 }
 
-.freelancer-name h4,
-.freelancer-name h4 a {
+.doctors-name h4,
+.doctors-name h4 a {
 	font-size: 18px;
 	font-weight: 600;
 	color: #333;
 	cursor: pointer;
 }
 
-.freelancer-name img.flag {
+.doctors-name img.flag {
 	height: 15px;
 	border-radius: 3px;
 	position: relative;
@@ -5232,19 +5232,19 @@ span.blog-item-tag {
 	cursor: default
 }
 
-.freelancer-name span {
+.doctors-name span {
 	color: #888;
 }
 
-.freelancer-details {
+.doctors-details {
 	padding: 35px;
 	background-color: #fafafa;
 	flex-grow: 0;
 }
 
-.freelancers-grid-layout .freelancer-details { border-radius: 0 0 4px 4px; }
+.doctors-grid-layout .doctors-details { border-radius: 0 0 4px 4px; }
 
-.freelancers-grid-layout .freelancer-details a.button {
+.doctors-grid-layout .doctors-details a.button {
 	display: block;
 	text-align: center;
 	width: 100% !important;
@@ -5252,18 +5252,18 @@ span.blog-item-tag {
 	box-shadow: 0 4px 12px rgba(102,103,107,0.1);
 }
 
-.freelancer-details a.button:hover {
+.doctors-details a.button:hover {
 	box-shadow: 0 4px 12px rgba(102,103,107,0.2);
 }
 
-.freelancer-details-list ul {
+.doctors-details-list ul {
 	list-style: none;
 	padding: 0;
 	margin: 0 0 5px 0;
 	font-size: 14.7px;
 }
 
-.freelancer-details-list ul li {
+.doctors-details-list ul li {
 	display: inline-block;
 	margin-right: 25px;
 	line-height: 23px;
@@ -5271,16 +5271,16 @@ span.blog-item-tag {
 	margin-bottom: 15px;
 }
 
-.freelancer-details-list ul li:last-child {
+.doctors-details-list ul li:last-child {
 	margin-right: 0;
 }
 
-.freelancer-details-list ul li strong {
+.doctors-details-list ul li strong {
 	display: block;
 	color: #333;
 }
 
-.freelancer-details-list ul li strong i {
+.doctors-details-list ul li strong i {
 	position: relative;
 	top: 1px;
 	margin-right: -1px;
@@ -5289,63 +5289,63 @@ span.blog-item-tag {
 
 
 /* Detail Item */
-.freelancer-detail-item {
+.doctors-detail-item {
 	display: inline-block;
 	margin: 2px 10px 5px 0;
 }
 
-.freelancer-detail-item a,
-.freelancer-detail-item {
+.doctors-detail-item a,
+.doctors-detail-item {
 	color: #888;
 }
 
-.freelancer-detail-item a:hover {
+.doctors-detail-item a:hover {
 	color: #66676b;
 }
 
-.freelancer-detail-item i {
+.doctors-detail-item i {
 	position: relative;
 	top: 2px;
 	margin-right: 3px;
 }
 
 
-/* Media Queiers for Freelancers List */
+/* Media Queiers for doctors List */
 @media (max-width: 1366px) {
-	.freelances-grid-layout .freelancer-overview .freelancer-avatar { width: 100px; }
+	.freelances-grid-layout .doctors-overview .doctors-avatar { width: 100px; }
 }
 
 @media (max-width: 768px) {
-	.freelances-grid-layout.freelancers-container { width: 100%; }
-	.freelances-grid-layout .freelancer { margin: 0 0 30px 0; width: 100%; }
-	.freelancers-container.freelancers-grid-layout { width: 100%; }
-	.freelancers-container.freelancers-grid-layout .freelancer { width: 100%; margin-right: 0; }
+	.freelances-grid-layout.doctors-container { width: 100%; }
+	.freelances-grid-layout .doctors { margin: 0 0 30px 0; width: 100%; }
+	.doctors-container.doctors-grid-layout { width: 100%; }
+	.doctors-container.doctors-grid-layout .doctors { width: 100%; margin-right: 0; }
 }
 
-/* Full Page Media Queiers for Freelancers List */
+/* Full Page Media Queiers for doctors List */
 @media (max-width: 2560px) {
-	.full-page-container .freelancer { width: calc(100% * (1/4) - 30px); }
+	.full-page-container .doctors { width: calc(100% * (1/4) - 30px); }
 }
 
 @media (max-width: 1920px) {
-	.full-page-container .freelancer { width: calc(100% * (1/3) - 30px); }
+	.full-page-container .doctors { width: calc(100% * (1/3) - 30px); }
 }
 
 @media (max-width: 1366px) {
-	.full-page-container .freelancer { width: calc(100% * (1/2) - 30px); }
+	.full-page-container .doctors { width: calc(100% * (1/2) - 30px); }
 }
 
 @media (max-width: 1099px) {
-	.full-page-container .freelancers-container { width: 100%; }
-	.full-page-container .freelancer { width: 100%; margin-right: 0; }
+	.full-page-container .doctors-container { width: 100%; }
+	.full-page-container .doctors { width: 100%; margin-right: 0; }
 }
 
 /* ---------------------------------- */
-/* Freelancers - List Layout
+/* doctors - List Layout
 ------------------------------------- */
-.freelancers-container.freelancers-list-layout { width: 100%; }
+.doctors-container.doctors-list-layout { width: 100%; }
 
-.freelancers-list-layout .freelancer { 
+.doctors-list-layout .doctors { 
 	margin: 0 0 30px 0;
 	width: 100%;
     flex-direction: row;
@@ -5353,7 +5353,7 @@ span.blog-item-tag {
 }
 
 
-.freelancers-list-layout .freelancer-overview {
+.doctors-list-layout .doctors-overview {
 	text-align: left;
 	padding: 45px 40px;
 	flex-grow: 1;
@@ -5362,29 +5362,29 @@ span.blog-item-tag {
 	align-items: center;
 }
 
-.freelancers-list-layout .freelancer-overview-inner {
+.doctors-list-layout .doctors-overview-inner {
 	flex: 1;
 	display: flex;
 	align-items: center;
 }
 
-.freelancers-list-layout .freelancer-details {
+.doctors-list-layout .doctors-details {
 	padding: 45px 40px 45px 0;
 	background-color: transparent;
 	flex: 0 0 360px;
 }
 
-.freelancers-list-layout .freelancer-overview .freelancer-avatar {
+.doctors-list-layout .doctors-overview .doctors-avatar {
     width: 100px;
     margin: 0;
 } 
 
-.freelancers-list-layout .freelancer-overview .freelancer-name {
+.doctors-list-layout .doctors-overview .doctors-name {
     text-align: left;
     margin: 0 0 0 30px;
 } 
 
-.freelancers-list-layout .freelancer-details a.button {
+.doctors-list-layout .doctors-details a.button {
     display: block;
     text-align: center;
     min-width: 50%;
@@ -5395,47 +5395,47 @@ span.blog-item-tag {
 	box-shadow: 0 4px 12px rgba(102,103,107,0.15);
 } 
 
-.freelancers-list-layout .freelancer-details a.button:hover {
+.doctors-list-layout .doctors-details a.button:hover {
 	box-shadow: 0 4px 12px rgba(102,103,107,0.25);
 } 
 
-.freelancers-list-layout .bookmark-icon {
+.doctors-list-layout .bookmark-icon {
 	display: none;
 } 
 
-.freelancers-list-layout .freelancer-details-list ul {
+.doctors-list-layout .doctors-details-list ul {
 	float: right;
 	display: block
 } 
 
-.freelancers-list-layout .freelancer-details-list ul li {
+.doctors-list-layout .doctors-details-list ul li {
 	margin-left: 25px;
 	margin-right: 0;
 	float: right;
 } 
 
-/* Freelancers Compact List */
-.compact-list.freelancers-list-layout .freelancer {
+/* doctors Compact List */
+.compact-list.doctors-list-layout .doctors {
     border-radius: 0;
     margin-bottom: 0;
     box-shadow: none;
 }
 
-.compact-list.freelancers-list-layout .freelancer:hover {
+.compact-list.doctors-list-layout .doctors:hover {
     transform: translateY(0);
 }
 
-.compact-list.freelancers-list-layout {
+.compact-list.doctors-list-layout {
 	background-color: #fff;
     border-radius: 4px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.12);
 }
 
-.compact-list.freelancers-list-layout .freelancer:nth-child(2n) { background-color: #fafafa; }
+.compact-list.doctors-list-layout .doctors:nth-child(2n) { background-color: #fafafa; }
 
-.compact-list.freelancers-list-layout .freelancer:hover:before  { opacity: 1; }
+.compact-list.doctors-list-layout .doctors:hover:before  { opacity: 1; }
 
-.compact-list.freelancers-list-layout .freelancer:before {
+.compact-list.doctors-list-layout .doctors:before {
     content: "";
     position: absolute;
     top: 0;
@@ -5448,62 +5448,62 @@ span.blog-item-tag {
     opacity: 0;
 }
 
-.compact-list.freelancers-list-layout .freelancer:last-of-type {
+.compact-list.doctors-list-layout .doctors:last-of-type {
 	border-radius: 0 0 3px 3px;
 	overflow: hidden;
 }
 
-.compact-list.freelancers-list-layout .freelancer:first-of-type {
+.compact-list.doctors-list-layout .doctors:first-of-type {
 	border-radius: 3px 3px 0 0;
 	overflow: hidden;
 }
 
 
-/* Media Queiers for Freelancers List Layout */
+/* Media Queiers for doctors List Layout */
 @media (max-width: 1366px) {
-	.freelancers-list-layout .freelancer-overview .freelancer-avatar { width: 100px; }
+	.doctors-list-layout .doctors-overview .doctors-avatar { width: 100px; }
 }
 
 @media (max-width: 1240px) {
 
-	.freelancers-list-layout .freelancer { flex-direction: column; }
-	.freelancers-list-layout .freelancer-details {
+	.doctors-list-layout .doctors { flex-direction: column; }
+	.doctors-list-layout .doctors-details {
 		flex: 1;
 		padding: 35px 40px;
 		background-color: #fafafa;
 	}
 
-	.freelancers-list-layout .freelancer-details-list ul { float: left; }
+	.doctors-list-layout .doctors-details-list ul { float: left; }
 
-	.freelancers-list-layout .freelancer-details-list ul li {
+	.doctors-list-layout .doctors-details-list ul li {
 	    margin-left: 0;
 	    margin-right: 25px;
 	    float: left;
 	}
 
-	.freelancers-list-layout .freelancer-details a.button {
+	.doctors-list-layout .doctors-details a.button {
 	    float: none;
 	    width: 100% !important;
 	}
 
-	.freelancers-list-layout .freelancer-overview .freelancer-avatar { width: 90px; }
+	.doctors-list-layout .doctors-overview .doctors-avatar { width: 90px; }
 
 	/* Compact Layout */
-	.compact-list.freelancers-list-layout .freelancer-details {
+	.compact-list.doctors-list-layout .doctors-details {
 	    background-color: transparent;
 	    padding-top: 0;
 	}
 }
 
 @media (max-width: 768px) {
-	.freelancers-list-layout .freelancer-overview,
-	.freelancers-list-layout .freelancer-details {
+	.doctors-list-layout .doctors-overview,
+	.doctors-list-layout .doctors-details {
 		padding: 30px;
 	}
 
-	.freelancers-list-layout .freelancer-overview .freelancer-avatar { width: 80px; }
+	.doctors-list-layout .doctors-overview .doctors-avatar { width: 80px; }
 
-	.freelancers-list-layout .star-rating:before {
+	.doctors-list-layout .star-rating:before {
 	    display: block;
 	    float: none;
 	    text-align: center;
@@ -5513,7 +5513,7 @@ span.blog-item-tag {
 }
 
 /* ---------------------------------- */
-/* Browse Companies
+/* Browse hospitals
 ------------------------------------- */
 
 /* Letters List */
@@ -5553,15 +5553,15 @@ span.blog-item-tag {
 	box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
-/* Companies List */
-.companies-list {
+/* hospitals List */
+.hospitals-list {
 	display: flex;
     flex-wrap: wrap;
 	margin-top: 30px;
 	width: calc(100% + 30px);
 }
 
-.companies-list .company {
+.hospitals-list .hospital {
 	width: calc(33.3% - 30px);
 	margin: 0 30px 30px 0;
 	flex-grow: 1;
@@ -5575,17 +5575,17 @@ span.blog-item-tag {
 	transition: 0.3s;
 }
 
-.companies-list .company:hover {
+.hospitals-list .hospital:hover {
 	transform: translateY(-3px);
 
 }
 
 @media (min-width: 993px) {
-	.companies-list .company:nth-child(3n) { border-right: none; }
-	.companies-list .company:nth-last-child(-n+3) { border-bottom: none; }
+	.hospitals-list .hospital:nth-child(3n) { border-right: none; }
+	.hospitals-list .hospital:nth-last-child(-n+3) { border-bottom: none; }
 }
 
-.companies-list .company img {
+.hospitals-list .hospital img {
 	max-width: 120px;
 	max-height: 60px;
 	display: inline-block;
@@ -5593,7 +5593,7 @@ span.blog-item-tag {
 	transform: translate3d(0,0,0);
 }
 
-.companies-list .company .company-logo {
+.hospitals-list .hospital .hospital-logo {
 	height: 60px;
 	display: flex;
 	display: flex;
@@ -5602,7 +5602,7 @@ span.blog-item-tag {
 	margin-bottom: 30px;
 }
 
-.companies-list .company h4 {
+.hospitals-list .hospital h4 {
 	color: #333;
 	font-size: 18px;
 	font-weight: 600;
@@ -5610,16 +5610,16 @@ span.blog-item-tag {
 	display: block;
 }
 
-.companies-list .company span {
+.hospitals-list .hospital span {
 	color: #888;
 }
 
-.companies-list .company .star-rating {
+.hospitals-list .hospital .star-rating {
 	margin-top: 5px;
 }
 
 .not-rated,
-.company-not-rated {
+.hospital-not-rated {
     border-radius: 4px;
     background-color: #f0f0f0;
     color: #888;
@@ -5632,7 +5632,7 @@ span.blog-item-tag {
     text-align: center;
 }
 
-/* Media Queries for Companies List */
+/* Media Queries for hospitals List */
 @media (max-width: 1366px) {
 	.letters-list a {
 		font-size: 16px;
@@ -5644,11 +5644,11 @@ span.blog-item-tag {
 }
 
 @media (max-width: 992px) {
-	.companies-list .company { 	width: calc(50% - 30px); }
+	.hospitals-list .hospital { 	width: calc(50% - 30px); }
 }
 
 @media (max-width: 768px) {
-	.companies-list .company { width: 100%; }
+	.hospitals-list .hospital { width: 100%; }
 }
 
 /* -------------------------------------------------------------- */
@@ -6634,7 +6634,7 @@ table.basic-table { margin-bottom: 0; }
 /* ---------------------------------- */
 /* Verified Badge
 ------------------------------------- */
-.job-listing-company .verified-badge,
+.job-listing-hospital .verified-badge,
 .job-listing .job-listing-footer ul li .verified-badge {
 	position: relative;
 	display: inline-block;
@@ -6666,7 +6666,7 @@ table.basic-table { margin-bottom: 0; }
 	line-height: 27px;
 }
 
-.job-listing .job-listing-company-logo .verified-badge {
+.job-listing .job-listing-hospital-logo .verified-badge {
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -8997,7 +8997,7 @@ transform: translateY(-18px);
 
 .blog-carousel.slick-initialized .blog-compact-item-container { width: auto; }
 
-.full-width-carousel-fix .default-slick-carousel.slick-initialized .freelancer,
+.full-width-carousel-fix .default-slick-carousel.slick-initialized .doctors,
 .full-width-carousel-fix .blog-carousel.slick-initialized .blog-compact-item-container {
 	margin: 15px;
 	transform: scale(0.85);
@@ -9006,7 +9006,7 @@ transform: translateY(-18px);
 	transition: 0.4s;
 }
 
-.full-width-carousel-fix .default-slick-carousel.slick-initialized .slick-slide.slick-active.freelancer,
+.full-width-carousel-fix .default-slick-carousel.slick-initialized .slick-slide.slick-active.doctors,
 .full-width-carousel-fix .blog-carousel.slick-initialized .slick-slide.slick-active.blog-compact-item-container {
 	transform: scale(1);
 	opacity: 1;
@@ -9763,12 +9763,12 @@ transform: translateY(-18px);
 .blog-carousel.slick-initialized { display: block; }
 
 /* Custom */
-.default-slick-carousel .freelancer { margin: 15px; width: 30%; }
-.default-slick-carousel.slick-initialized .freelancer { width: auto; }
-.default-slick-carousel .freelancer-details-list ul li { margin-right: 22px; }
-.default-slick-carousel .freelancer-details-list ul li:last-child { margin-right: 0px; }
+.default-slick-carousel .doctors { margin: 15px; width: 30%; }
+.default-slick-carousel.slick-initialized .doctors { width: auto; }
+.default-slick-carousel .doctors-details-list ul li { margin-right: 22px; }
+.default-slick-carousel .doctors-details-list ul li:last-child { margin-right: 0px; }
 
-.default-slick-carousel .freelancer:hover {
+.default-slick-carousel .doctors:hover {
     box-shadow: 0 2px 12px rgba(0,0,0,0.12);
     transform: translateY(0px);
 }
@@ -12051,7 +12051,7 @@ body .pac-container {
     padding: 20px 25px;
 }
 
-.infoBox .job-listing h4.job-listing-company {
+.infoBox .job-listing h4.job-listing-hospital {
 	font-size: 14px;
 	position: relative;
 	top: 0px;
@@ -12079,14 +12079,14 @@ body .pac-container {
 	line-height: 24px;
 }
 
-.infoBox .job-listing .job-listing-company-logo {
+.infoBox .job-listing .job-listing-hospital-logo {
 	max-width: 46px;
 	margin: 5px 18px 5px 0;
 	top: 0;
 	flex: 0 0 46px;
 }
 
-.infoBox .job-listing .job-listing-company-logo img { max-width: 46px; }
+.infoBox .job-listing .job-listing-hospital-logo img { max-width: 46px; }
 
 
 .map-box {
@@ -12670,9 +12670,9 @@ body .pac-container {
 
 .bid .bids-avatar { align-self: center; }
 
-.bid .freelancer-name { margin-top: 0; }
+.bid .doctors-name { margin-top: 0; }
 
-.bid .freelancer-avatar {
+.bid .doctors-avatar {
 	width: 80px;
 	margin: 0 auto;
 	position: relative;
@@ -12681,13 +12681,13 @@ body .pac-container {
 
 .bid .star-rating { margin-top: 3px; display: block }
 
-.bid .freelancer-avatar img {
+.bid .doctors-avatar img {
 	width: 100%;
 	border-radius: 50%;
 	cursor: pointer;
 }
 
-.bid .freelancer-avatar .verified-badge {
+.bid .doctors-avatar .verified-badge {
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -12724,7 +12724,7 @@ body .pac-container {
 }
 
 @media (max-width: 768px) {
-	.bid .freelancer-avatar {
+	.bid .doctors-avatar {
 		width: 70px;
 		margin: 0 0 15px 0;
 	}
@@ -12840,11 +12840,11 @@ a.apply-now-button i {
 }
 
 
-/* Single Freelancer Profile
+/* Single doctors Profile
 ------------------------------------- */
 
-/* Freelancer Socials*/
-.freelancer-socials ul {
+/* doctors Socials*/
+.doctors-socials ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -12852,17 +12852,17 @@ a.apply-now-button i {
 	margin: 0 0 -5px -8px;
 }
 
-.freelancer-socials ul li {
+.doctors-socials ul li {
 	display: inline-block;
 	font-size: 24px;
 }
 
-.freelancer-socials ul li a {
+.doctors-socials ul li a {
 	color: #b9b9b9;
 	padding: 0 8px;
 }
 
-.freelancer-socials ul li a:hover {
+.doctors-socials ul li a:hover {
 	color: #333;
 }
 
@@ -13005,8 +13005,8 @@ a.attachment-box:hover i {
 }
 
 
-/* Freelancer Indicators */
-.freelancer-indicators {
+/* doctors Indicators */
+.doctors-indicators {
 	display: flex;
 	flex-wrap: wrap;
 	width: calc(100% + 30px);
@@ -13014,7 +13014,7 @@ a.attachment-box:hover i {
 	margin-bottom: -20px;
 }
 
-.freelancer-indicators .indicator {
+.doctors-indicators .indicator {
 	width: calc(50% - 31px);
 	margin-right: 30px;
 	margin-bottom: 20px;
@@ -13022,13 +13022,13 @@ a.attachment-box:hover i {
 	flex-direction: column;
 }
 
-.freelancer-indicators .indicator strong {
+.doctors-indicators .indicator strong {
 	color: #333;
 	font-weight: 600;
 }
 
-.freelancer-indicators .indicator-bar span,
-.freelancer-indicators .indicator-bar {
+.doctors-indicators .indicator-bar span,
+.doctors-indicators .indicator-bar {
 	width: 100%;
 	height: 4px;
 	background-color: #e0e0e0;
@@ -13038,7 +13038,7 @@ a.attachment-box:hover i {
 	transition: 1s;
 }
 
-.freelancer-indicators .indicator-bar span {
+.doctors-indicators .indicator-bar span {
 	width: 0;
 	background-color: #66676b;
 	position: absolute;
@@ -13070,8 +13070,8 @@ a.attachment-box:hover i {
 	.boxed-list-item .item-details,
 	.attachments-container,
 	.attachments-container .attachment-box,
-	.freelancer-indicators,
-	.freelancer-indicators .indicator {
+	.doctors-indicators,
+	.doctors-indicators .indicator {
 		display: block;
 		width: 100%;
 	}
@@ -13838,7 +13838,7 @@ ul.dashboard-box-list > li:hover {
 
 /* Listings in Dashboard
 ------------------------------------- */
-/* Freelancers */
+/* doctors */
 .dashboard-box .job-listing-details {
 	box-shadow: none;
 	padding: 10px 0;
@@ -13865,7 +13865,7 @@ ul.dashboard-box-list > li:hover {
 	font-size: 18px;
 }
 
-.dashboard-box .job-listing .job-listing-company-logo {
+.dashboard-box .job-listing .job-listing-hospital-logo {
 	max-width: 50px;
 }
 
@@ -13884,27 +13884,27 @@ ul.dashboard-box-list > li:hover {
 }
 
 /* Jobs */
-.dashboard-box .freelancer-overview {
+.dashboard-box .doctors-overview {
 	padding: 15px 0;
 }
-.dashboard-box .freelancer-overview-inner {
+.dashboard-box .doctors-overview-inner {
     flex:  auto;
     display: flex;
     align-items: center;
 }
 
-.dashboard-box .freelancer-overview .freelancer-name {
+.dashboard-box .doctors-overview .doctors-name {
     text-align: left;
     margin: 0 0 0 30px;
     width: 100%;
 }
 
-.dashboard-box .freelancer-overview .freelancer-avatar {
+.dashboard-box .doctors-overview .doctors-avatar {
 	margin: 0;
 	width: 90px;
 }
 
-.dashboard-box .freelancer-overview.manage-candidates .freelancer-avatar {
+.dashboard-box .doctors-overview.manage-candidates .doctors-avatar {
 	align-self: flex-start;
 }
 
@@ -14004,18 +14004,18 @@ ul.dashboard-box-list > li:hover {
 }
 
 @media (max-width: 768px) {
-	.dashboard-box .freelancer-overview .freelancer-avatar {
+	.dashboard-box .doctors-overview .doctors-avatar {
 		width: 60px;
 	}
-	.dashboard-box .freelancer-overview .freelancer-avatar .verified-badge {
+	.dashboard-box .doctors-overview .doctors-avatar .verified-badge {
 		transform: scale(0.8);
 		bottom: -5px;
 		right: -5px;
 	}
-	.dashboard-box .freelancer-overview .freelancer-name {
+	.dashboard-box .doctors-overview .doctors-name {
 	    margin: 0 0 0 25px;
 	}
-	.dashboard-box .job-listing .job-listing-company-logo {
+	.dashboard-box .job-listing .job-listing-hospital-logo {
 		display: none;
 	}
 
@@ -15589,3 +15589,21 @@ ul.dashboard-box-list > li:hover {
 	.padding-left-90 { padding-left: 90px !important; }
 	.padding-left-95 { padding-left: 95px !important; }
 	.padding-left-100 { padding-left: 100px !important; }
+
+
+	input.ng-touched.ng-invalid{
+		border-color: #dc3545;
+	}
+	 
+	div.validation-error{
+		width: 100%;
+		margin-top: .25rem;
+		font-size: 80%;
+		color: #dc3545;
+	}
+	 
+	/* for table row hover - in employee-list component */
+	table.table-hover tbody tr:hover{
+		cursor: pointer;
+	}
+	

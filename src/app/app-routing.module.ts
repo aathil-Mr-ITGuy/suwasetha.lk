@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { IndexComponent } from './index/index.component';
 import { InternshipsComponent } from './internships/internships.component';
-import { CompaniesComponent } from './companies/companies.component';
+import { HospitalComponent } from './Hospital/Hospital.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
@@ -15,6 +15,8 @@ import { ManageUserComponent } from './manage-user/manage-user.component';
 import { UsersComponent } from './users/users.component';
 import { HospitalsComponent } from './hospitals/hospitals.component';
 
+import { AppointmentsComponent } from './appointments/appointments.component';
+import { BookappointmentComponent } from './bookappointment/bookappointment.component';
 
 
 
@@ -29,8 +31,8 @@ const routes: Routes = [
     component: InternshipsComponent
   },
   {
-    path:'companies',
-    component: CompaniesComponent
+    path:'Hospital',
+    component: HospitalComponent
   },
   {
     path:'doctors',
@@ -72,6 +74,13 @@ const routes: Routes = [
     path:'hospitals',
     component: HospitalsComponent
   },
+    path:'appointments',
+    component: AppointmentsComponent
+  },
+  {
+    path: 'bookappointment',
+    component: BookappointmentComponent
+  }
   
 ];
 

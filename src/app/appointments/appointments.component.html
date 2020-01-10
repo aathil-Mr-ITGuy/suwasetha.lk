@@ -7,13 +7,13 @@
 		<div class="row">
 			<div class="col-md-12">
 
-				<h2>Log In</h2>
+				<h2>Appointment</h2>
 
 				<!-- Breadcrumbs -->
 				<nav id="breadcrumbs" class="dark">
 					<ul>
 						<li><a href="#">Home</a></li>
-						<li>Log In</li>
+						<li>Appointment</li>
 					</ul>
 				</nav>
 
@@ -33,7 +33,7 @@
 			<div class="login-register-page">
 				<!-- Welcome Text -->
 				<div class="welcome-text">
-					<h3>We're glad to see you again!</h3>
+					<h3>Please login to book an appointment!</h3>
 					<span>Don't have an account? <a routerLink="/register">Sign Up!</a></span>
 				</div>
 					
@@ -52,7 +52,7 @@
 				</form>
 				
 				<!-- Button -->
-				<button class="button full-width button-sliding-icon ripple-effect margin-top-10" type="submit" (click)="authService.login(userEmail.value, userPassword.value)">Log In <i class="icon-material-outline-arrow-right-alt"></i></button>
+				<button class="button full-width button-sliding-icon ripple-effect margin-top-10" type="submit" (click)="authService.login2(userEmail.value, userPassword.value)">Log In <i class="icon-material-outline-arrow-right-alt"></i></button>
 				
 				
 			</div>
